@@ -13,6 +13,9 @@
 
 - `git push`
 
+### Notes
+
+- Github pages are Case sensitive, so name images properly "x.jpg" and not "x.JPG"
 
 
 <!--
