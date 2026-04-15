@@ -1,4 +1,6 @@
 {
+  "name": "HkOh",
+  "bio": "Hello Cuties, Im Hk the influencer of the world in lifestyle! ",
   "name": "Frau Oh",
   "bio": "Hello Cuties, I'm the lady, the influencer of the world in lifestyle! ",
   "photo": "data/photos/profile.jpg",
@@ -6,6 +8,7 @@
   "activities": ["🎙️", "🪡", "🍛", "🏕️", "🐕", "📚"],
 
   "music": {
+    "label": "Frank Ocean - Blonded",
     "label": "Frank Ocean - Pink + White",
     "previewUrl": "data/audio/Blonded - FO.mp3"
   },

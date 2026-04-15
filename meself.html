@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geppy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Back</a>
+    <h2 id="geppy-page-title"></h2>
+  </header>
+
+  <main class="gallery-page">
+    <div id="geppy-grid" class="masonry-grid"></div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-info">
+        <span id="lightbox-caption"></span>
+        <span id="lightbox-meta"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="geppy.js"></script>
+</body>
+</html>
