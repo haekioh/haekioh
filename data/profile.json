@@ -23,6 +23,11 @@
     "recipes": {
       "label": "Recipes 🍳",
       "coverPhoto": "data/photos/recipes-cover.jpg"
-    }
+    },
+        "meself": {
+      "label": "Meself 👽",
+      "coverPhoto": "data/photos/meselfcover.jpg"
+    }  
+
   }
 }

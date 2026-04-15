@@ -62,4 +62,9 @@
   recipesImg.src = data.sections.recipes.coverPhoto;
   recipesImg.alt = data.sections.recipes.label;
   document.getElementById('recipes-label').textContent = data.sections.recipes.label;
+
+    const meselfImg = document.getElementById('meself-img');
+  meselfImg.src = data.sections.meself.coverPhoto;
+  meselfImg.alt = data.sections.meself.label;
+  document.getElementById('meself-label').textContent = data.sections.meself.label;
 })();
