@@ -1,6 +1,18 @@
 ## Hi there 👋
 
 
+### How to update the webpage
+
+1.  Make your cute changes. Don't leave uselessly heavy files in the repository.
+
+2. Run in terminal:
+
+- `git add .`
+
+- `git commit -m "Enter message describing the changes"`
+
+- `git push`
+
 
 
 <!--
