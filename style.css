@@ -1,0 +1,438 @@
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black: #111111;
+  --white: #ffffff;
+  --gray-100: #f5f5f5;
+  --gray-200: #e8e8e8;
+  --gray-400: #aaaaaa;
+  --gray-600: #666666;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --radius: 12px;
+  --radius-sm: 6px;
+  --transition: 0.18s ease;
+}
+
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font);
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+img { display: block; width: 100%; height: auto; }
+
+a { color: inherit; text-decoration: none; }
+
+/* =============================================
+   PROFILE PAGE
+   ============================================= */
+.profile-page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--gray-200);
+  border: 1.5px solid var(--gray-200);
+}
+
+.profile-card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.profile-card p {
+  font-size: 0.975rem;
+  color: var(--gray-600);
+  max-width: 380px;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.meta-item { display: flex; align-items: center; gap: 0.35rem; }
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border: 1.5px solid var(--black);
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-family: var(--font);
+  font-weight: 500;
+  background: transparent;
+  color: var(--black);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  text-decoration: none;
+}
+.btn-outline:hover { background: var(--black); color: var(--white); }
+.btn-outline.playing { background: var(--black); color: var(--white); }
+
+/* =============================================
+   NAV CARDS (index page bottom section)
+   ============================================= */
+.nav-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.nav-card {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: var(--gray-200);
+  border: 1.5px solid var(--gray-200);
+  transition: transform var(--transition), border-color var(--transition);
+  display: block;
+}
+.nav-card:hover { transform: translateY(-2px); border-color: var(--black); }
+
+.nav-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.nav-card:hover img { transform: scale(1.03); }
+
+.nav-card-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 1.5rem 1rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+  color: var(--white);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* =============================================
+   PAGE HEADER (geppy + recipes pages)
+   ============================================= */
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.page-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.back-link {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+.back-link:hover { color: var(--black); }
+
+/* =============================================
+   GEPPY MASONRY GRID
+   ============================================= */
+.gallery-page {
+  padding: 1.25rem;
+}
+
+.masonry-grid {
+  columns: 2;
+  column-gap: 0.6rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  transition: transform var(--transition);
+  position: relative;
+}
+.masonry-item:hover { transform: scale(1.015); }
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.masonry-item-info {
+  padding: 0.5rem 0.6rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.masonry-item-location {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+}
+
+.masonry-item-date {
+  font-size: 0.7rem;
+  color: var(--gray-400);
+}
+
+/* =============================================
+   LIGHTBOX
+   ============================================= */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(10,10,10,0.92);
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+.lightbox.open { display: flex; }
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem; right: 1.25rem;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 1.4rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem;
+  transition: color var(--transition);
+}
+.lightbox-close:hover { color: var(--white); }
+
+.lightbox-inner {
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lightbox-inner img {
+  border-radius: var(--radius-sm);
+  max-height: 78vh;
+  width: 100%;
+  object-fit: contain;
+  background: #1a1a1a;
+}
+
+.lightbox-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.lightbox-info span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* =============================================
+   RECIPES GRID
+   ============================================= */
+.recipes-page {
+  padding: 1.25rem;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.recipe-card {
+  cursor: pointer;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1.5px solid var(--gray-200);
+  background: var(--white);
+  transition: transform var(--transition), border-color var(--transition);
+}
+.recipe-card:hover { transform: translateY(-2px); border-color: var(--black); }
+
+.recipe-card-thumb {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--gray-100);
+}
+
+.recipe-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.recipe-card:hover .recipe-card-thumb img { transform: scale(1.04); }
+
+.recipe-card-body {
+  padding: 0.65rem 0.75rem 0.75rem;
+}
+
+.recipe-card-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.recipe-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 2rem;
+  color: var(--gray-600);
+  background: var(--gray-100);
+}
+
+/* =============================================
+   RECIPE MODAL
+   ============================================= */
+.recipe-modal-inner {
+  max-width: 720px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-modal-inner img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recipe-modal-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.recipe-modal-content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.modal-description {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.recipe-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+.recipe-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.recipe-columns h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-400);
+  margin-bottom: 0.6rem;
+}
+
+.recipe-columns ul,
+.recipe-columns ol {
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.recipe-columns li { line-height: 1.5; }
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (min-width: 640px) {
+  .masonry-grid { columns: 3; }
+  .recipe-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid { columns: 4; }
+  .recipe-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .nav-cards { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .recipe-columns { grid-template-columns: 1fr; }
+  .profile-page { padding: 2rem 1rem 3rem; }
+}

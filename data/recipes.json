@@ -1,0 +1,76 @@
+{
+  "title": "Recipes",
+
+  "recipes": [
+    {
+      "title": "Sourdough Focaccia",
+      "description": "Thick, pillowy focaccia with a crisp base and olive-oil dimpled top. Great with anything or on its own.",
+      "photo": "data/photos/recipes/focaccia.jpg",
+      "tags": ["bread", "vegetarian", "weekend"],
+      "ingredients": [
+        "500 g bread flour",
+        "375 g water (75% hydration)",
+        "100 g active sourdough starter",
+        "10 g salt",
+        "4 tbsp olive oil",
+        "Flaky sea salt and rosemary to finish"
+      ],
+      "steps": [
+        "Mix flour and water, rest 30 min (autolyse).",
+        "Add starter and salt, fold until combined.",
+        "Perform 3 sets of stretch-and-folds over 3 hours.",
+        "Coat a baking tray generously with olive oil, turn dough in.",
+        "Cold-proof in the fridge overnight (8–16 h).",
+        "Pull from fridge 2 h before baking. Dimple with fingers, drizzle oil.",
+        "Bake at 220 °C for 25 min until deep golden.",
+        "Finish with flaky salt and rosemary straight from the oven."
+      ]
+    },
+    {
+      "title": "Miso Butter Pasta",
+      "description": "Ten-minute weeknight pasta. White miso and butter make an umami sauce that coats every strand.",
+      "photo": "photos/recipes/miso-pasta.jpg",
+      "tags": ["pasta", "quick", "vegetarian"],
+      "ingredients": [
+        "200 g spaghetti or linguine",
+        "2 tbsp white miso",
+        "2 tbsp unsalted butter",
+        "1 clove garlic, minced",
+        "80 ml pasta cooking water",
+        "Parmesan and black pepper to serve"
+      ],
+      "steps": [
+        "Cook pasta in well-salted water. Reserve 100 ml pasta water before draining.",
+        "In a pan over medium heat, melt butter and gently fry garlic 1 min.",
+        "Off the heat, whisk miso into butter until smooth.",
+        "Add pasta and 80 ml pasta water, toss vigorously over low heat until sauce coats.",
+        "Serve immediately with Parmesan and cracked pepper."
+      ]
+    },
+    {
+      "title": "Brown Butter Financiers",
+      "description": "Small French almond cakes with crispy edges and a tender, nutty crumb. Perfect with coffee.",
+      "photo": "data/photos/recipes/financiers.jpg",
+      "tags": ["baking", "french", "snack"],
+      "ingredients": [
+        "120 g unsalted butter",
+        "120 g icing sugar",
+        "80 g almond flour",
+        "40 g all-purpose flour",
+        "3 egg whites (about 100 g)",
+        "1 tsp vanilla extract",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "Brown butter in a saucepan over medium heat until golden and nutty. Cool slightly.",
+        "Whisk together icing sugar, almond flour, flour, and salt.",
+        "Stir in egg whites and vanilla until just combined.",
+        "Stream in warm brown butter while stirring.",
+        "Rest batter 30 min in the fridge.",
+        "Fill greased financier moulds (or mini muffin tin) ¾ full.",
+        "Bake at 200 °C for 12–14 min until edges are deep golden and centres just set.",
+        "Cool 5 min, then unmould."
+      ]
+    }
+  ]
+}

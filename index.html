@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="profile-page">
+    <section class="profile-card">
+      <img id="profile-photo" class="profile-photo" src="" alt="Profile photo" />
+      <h1 id="profile-name"></h1>
+      <p id="profile-bio"></p>
+      <div class="profile-meta">
+        <span id="profile-location" class="meta-item"></span>
+        <span id="profile-activities" class="meta-item"></span>
+      </div>
+      <div class="profile-actions">
+        <button id="music-btn" class="btn-outline" aria-label="Play music preview">
+          <span id="music-label"></span>
+          <audio id="music-audio"></audio>
+        </button>
+        <a id="restaurant-link" class="btn-outline" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+    </section>
+
+    <section class="nav-cards">
+      <a id="geppy-card" class="nav-card" href="geppy.html">
+        <img id="geppy-img" src="" alt="Geppy" />
+        <span class="nav-card-label" id="geppy-label"></span>
+      </a>
+      <a id="recipes-card" class="nav-card" href="recipes.html">
+        <img id="recipes-img" src="" alt="Recipes" />
+        <span class="nav-card-label" id="recipes-label"></span>
+      </a>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

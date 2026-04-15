@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <a href="index.html" class="back-link">← Back</a>
+    <h2 id="recipes-page-title"></h2>
+  </header>
+
+  <main class="recipes-page">
+    <div id="recipes-grid" class="recipe-grid"></div>
+  </main>
+
+  <!-- Recipe modal -->
+  <div id="recipe-modal" class="lightbox" role="dialog" aria-modal="true" aria-label="Recipe viewer">
+    <button class="lightbox-close" id="recipe-modal-close" aria-label="Close">✕</button>
+    <div class="recipe-modal-inner">
+      <img id="modal-photo" src="" alt="" />
+      <div class="recipe-modal-content">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description" class="modal-description"></p>
+        <div class="recipe-tags" id="modal-tags"></div>
+        <div class="recipe-columns">
+          <div>
+            <h3>Ingredients</h3>
+            <ul id="modal-ingredients"></ul>
+          </div>
+          <div>
+            <h3>Steps</h3>
+            <ol id="modal-steps"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="recipes.js"></script>
+</body>
+</html>

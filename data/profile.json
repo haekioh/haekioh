@@ -1,0 +1,28 @@
+{
+  "name": "HkOh",
+  "bio": "Hello Cuties, Im Hk the goat of lifestyle, just trust me bro!",
+  "photo": "data/photos/profile.JPG",
+  "location": "Berlin, Germany",
+  "activities": ["🎙️", "🪡", "🍛", "🏕️", "🐕", "📚"],
+
+  "music": {
+    "label": "Frank Ocean - Blonded",
+    "previewUrl": "data/audio/Blonded - FO.mp3"
+  },
+
+  "restaurant": {
+    "label": "Best thai place ever: Surin",
+    "url": "https://www.surin-restaurant.de/"
+  },
+
+  "sections": {
+    "geppy": {
+      "label": "Geppy 🐾",
+      "coverPhoto": "data/photos/geppy-cover.jpg"
+    },
+    "recipes": {
+      "label": "Recipes 🍳",
+      "coverPhoto": "data/photos/recipes-cover.jpg"
+    }
+  }
+}
