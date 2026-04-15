@@ -3,46 +3,46 @@
 
   "photos": [
     {
-      "photo": "data/photos/geppy/geppy1.jpg",
-      "caption": "First morning in the park",
-      "location": "Tiergarten, Berlin",
-      "date": "March 2024"
+      "photo": "data/photos/meself/meself1.jpg",
+      "caption": "Moules-frites in Cavalaire!",
+      "location": "Cavalaire-sur-Mer, France",
+      "date": "July 2025"
     },
     {
-      "photo": "data/photos/geppy/geppy2.jpg",
-      "caption": "Beach day 🌊",
-      "location": "Usedom",
-      "date": "July 2024"
+      "photo": "data/photos/meself/meself2.jpg",
+      "caption": "fucking snowed",
+      "location": "Berlin, Germany",
+      "date": "Feb 2025"
     },
     {
-      "photo": "data/photos/geppy/geppy2.jpg",
-      "caption": "First snow",
-      "location": "Berlin",
-      "date": "January 2025"
+      "photo": "data/photos/meself/meself3.jpg",
+      "caption": "what a nice encounter, Meow Meow",
+      "location": "Villeneuve-lès-Avignon, Frange",
+      "date": "January 2026"
     },
     {
-      "photo": "data/photos/geppy/geppy2.jpg",
-      "caption": "Sunday mode",
-      "location": "",
-      "date": "April 2025"
+      "photo": "data/photos/meself/meself4.jpg",
+      "caption": "Geppuccino et moi, one of my favorite photos",
+      "location": "Berlin, Germany",
+      "date": "November 2025"
     },
     {
-      "photo": "data/photos/geppy/geppy3.jpg",
-      "caption": "Sunday mode",
-      "location": "",
-      "date": "April 2025"
+      "photo": "data/photos/meself/meself5.jpg",
+      "caption": "hahaha 쌍따봉 드려요",
+      "location": "Breslau, Poland",
+      "date": "August 2025"
     },
     {
-      "photo": "data/photos/geppy/geppy4.jpg",
-      "caption": "Sunday mode",
-      "location": "So political",
-      "date": "April 2025"
+      "photo": "data/photos/meself/meself6.jpg",
+      "caption": "could you please smile?????",
+      "location": "Gleisdreieck",
+      "date": "March 2025"
     },
     {
-      "photo": "data/photos/geppy/geppy2.jpg",
-      "caption": "Sunday mode",
-      "location": "",
-      "date": "April 2025"
+      "photo": "data/photos/meself/meself7.jpg",
+      "caption": "stop saying i'm abusing her",
+      "location": "Berlin, Germany",
+      "date": "October 2024"
     }
   ]
 }

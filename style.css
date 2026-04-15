@@ -68,6 +68,10 @@ a { color: inherit; text-decoration: none; }
   gap: 3rem;
 }
 
+#profile-bio {
+  white-space: pre-line;
+}
+
 .profile-card {
   display: flex;
   flex-direction: column;

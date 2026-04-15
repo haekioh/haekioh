@@ -1,11 +1,11 @@
-/* geppy.js — loads geppy.json and renders the masonry photo gallery */
+/* meself.js — loads meself.json and renders the masonry photo gallery */
 (async () => {
-  const data = await fetch('data/geppy.json').then(r => r.json());
+  const data = await fetch('data/meself.json').then(r => r.json());
 
   document.title = data.title;
-  document.getElementById('geppy-page-title').textContent = data.title;
+  document.getElementById('meself-page-title').textContent = data.title;
 
-  const grid = document.getElementById('geppy-grid');
+  const grid = document.getElementById('meself-grid');
   const lightbox = document.getElementById('lightbox');
   const lbImg = document.getElementById('lightbox-img');
   const lbCaption = document.getElementById('lightbox-caption');
