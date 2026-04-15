@@ -52,6 +52,11 @@
   restLink.textContent = '🍽  ' + (data.restaurant.label || 'My favourite spot');
   restLink.href = data.restaurant.url;
 
+    /* Cafe link */
+  const cafeLink = document.getElementById('cafe-link');
+  cafeLink.textContent = '☕️  ' + (data.cafe.label || 'My favourite spot');
+  cafeLink.href = data.cafe.url;
+
   /* Nav cards */
   const geppyImg = document.getElementById('geppy-img');
   geppyImg.src = data.sections.geppy.coverPhoto;
