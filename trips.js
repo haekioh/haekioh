@@ -1,4 +1,4 @@
-/* trips.js — loads trips.json and renders the masonry photo gallery */
+/* trips.js — loads trips.json and renders the masonry photo gallery 
 (async () => {
   const data = await fetch('data/trips.json').then(r => r.json());
 
@@ -20,6 +20,8 @@
     lbMeta.textContent = parts.join(' · ');
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
+    history.pushState({ lightbox: true }, '');
+
   }
 
   function closeLightbox() {
@@ -73,4 +75,9 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
   });
-})();
+  window.addEventListener('popstate', (event) => {
+  if (lightbox.classList.contains('open')) {
+    closeLightbox();
+  }
+});
+})(); */

@@ -52,10 +52,12 @@
   restLink.textContent = '🍽  ' + (data.restaurant.label || 'My favourite spot');
   restLink.href = data.restaurant.url;
 
-    /* Cafe link */
-  const cafeLink = document.getElementById('cafe-link');
-  cafeLink.textContent = '☕️  ' + (data.cafe.label || 'My favourite spot');
-  cafeLink.href = data.cafe.url;
+  /* Eamil Button*/
+  const emailLink = document.getElementById('email-link');
+
+emailLink.textContent = '📩 ' + (data.email?.label || 'Send me an email');
+emailLink.href =
+  'mailto:hkohauskr@gmail.com?subject=From%20your%20website&body=Hi!';
 
   /* Nav cards */
   const geppyImg = document.getElementById('geppy-img');

@@ -5,8 +5,7 @@
   "location": "Berlin, Germany",
   "activities": ["🎙️", "🪡", "🍛", "🏕️?", "🐕", "📚"],
 
-  "music": {
-    "label": "Frank Ocean - Pink + White",
+  "music": { "label": "Frank Ocean - Pink + White",
     "previewUrl": "data/audio/Blonded - FO.mp3"
   },
 
@@ -14,11 +13,6 @@
     "label": "Best thai place ever: Surin",
     "url": "https://www.surin-restaurant.de/"
   },
-    "cafe": {
-    "label": "Shall we visit this café together?",
-    "url": "https://cafe-am-engelbecken.de/en"
-  },
-  
 
   "sections": {
     "geppy": {
