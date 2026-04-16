@@ -72,4 +72,9 @@
   meselfImg.src = data.sections.meself.coverPhoto;
   meselfImg.alt = data.sections.meself.label;
   document.getElementById('meself-label').textContent = data.sections.meself.label;
+
+  const tripsImg = document.getElementById('trips-img');
+  tripsImg.src = data.sections.trips.coverPhoto;
+  tripsImg.alt = data.sections.trips.label;
+  document.getElementById('trips-label').textContent = data.sections.trips.label;
 })();

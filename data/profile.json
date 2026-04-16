@@ -29,10 +29,15 @@
       "label": "Recipes 🍳",
       "coverPhoto": "data/photos/recipes-cover.jpg"
     },
-        "meself": {
+     "meself": {
       "label": "Meself 👽",
       "coverPhoto": "data/photos/meselfcover.jpg"
-    }  
+    },
+      "trips": {
+      "label": "Trips 🌠",
+      "coverPhoto": "data/photos/tripscover.jpg"
+    }
+
 
   }
 }

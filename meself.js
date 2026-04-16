@@ -20,6 +20,9 @@
     lbMeta.textContent = parts.join(' · ');
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
+    history.pushState({ lightbox: true }, '');
+
+
   }
 
   function closeLightbox() {
@@ -73,4 +76,9 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
   });
+  window.addEventListener('popstate', (event) => {
+  if (lightbox.classList.contains('open')) {
+    closeLightbox();
+  }
+});
 })();

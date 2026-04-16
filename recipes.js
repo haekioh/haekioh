@@ -45,12 +45,18 @@
 
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+    history.pushState({ modal: true }, '', '#recipe');
+
   }
 
   function closeModal() {
     modal.classList.remove('open');
     document.body.style.overflow = '';
     modalPhoto.src = '';
+    if (location.hash === '#recipe') {
+    history.back();
+  }
+
   }
 
   data.recipes.forEach(recipe => {
@@ -108,4 +114,11 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
+
+  window.addEventListener('popstate', (e) => {
+  if (modal.classList.contains('open')) {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
 })();

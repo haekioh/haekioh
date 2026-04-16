@@ -1,0 +1,48 @@
+{
+  "title": "Trips",
+
+  "photos": [
+    {
+      "photo": "data/photos/geppy/geppy1.jpg",
+      "caption": "One thing that I want to see forever, her smile",
+      "location": "Kreuzberg",
+      "date": "March 2026"
+    },
+    {
+      "photo": "data/photos/geppy/geppy2.jpg",
+      "caption": "얼빡샷, way too cute",
+      "location": "Schöneberg, probably",
+      "date": "July 2024"
+    },
+    {
+      "photo": "data/photos/geppy/geppy5.jpg",
+      "caption": "OMG look at this baby face",
+      "location": "Berlin",
+      "date": "June 2021"
+    },
+    {
+      "photo": "data/photos/geppy/geppy6.jpg",
+      "caption": "Her first motor boat tour",
+      "location": "Müggelsee, Berlin",
+      "date": "July 2021"
+    },
+    {
+      "photo": "data/photos/geppy/geppy3.jpg",
+      "caption": "the queen",
+      "location": "Wilmersdorf, Berlin",
+      "date": "July 2025"
+    },
+    {
+      "photo": "data/photos/geppy/geppy4.jpg",
+      "caption": "so political",
+      "location": "Kreuzberg, Berlin",
+      "date": "April 2026"
+    },
+    {
+      "photo": "data/photos/geppy/geppy7.jpg",
+      "caption": "hihi good night",
+      "location": "Berlin",
+      "date": "November 2023"
+    }
+  ]
+}
